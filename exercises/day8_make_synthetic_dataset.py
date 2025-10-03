@@ -48,12 +48,12 @@ def save_sample(path, draw_fn, n):
         cv2.imwrite(os.path.join(path, f"{i:04d}.png"), img)
 
 def main():
-    save_sample("dataset/train/images/square", draw_square, 200)
-    save_sample("dataset/train/images/circle", draw_circle, 200)
-    save_sample("dataset/train/images/triangle", draw_triangle, 200)
-    save_sample("dataset/val/images/square", draw_square, 60)
-    save_sample("dataset/val/images/circle", draw_circle, 60)
-    save_sample("dataset/val/images/triangle", draw_triangle, 60)
+    save_sample("dataset/train/images/square", draw_square, 800)
+    save_sample("dataset/train/images/circle", draw_circle, 800)
+    save_sample("dataset/train/images/triangle", draw_triangle, 800)
+    save_sample("dataset/val/images/square", draw_square, 200)
+    save_sample("dataset/val/images/circle", draw_circle, 200)
+    save_sample("dataset/val/images/triangle", draw_triangle, 200)
 
 if __name__ == "__main__":
     main()
